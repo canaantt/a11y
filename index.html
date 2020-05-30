@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <script src="script.js"></script>
+    <body>
+        <title>Learn Accessibility</title>
+        <h1>Use span</h1>
+        <span id="button">Juice
+            <span id="icon"></span>
+        </span>
+        <div id="content">Hydrates...</div>
+        <h1>Use span with ARIA</h1>
+        <span id="button" 
+              role="button" 
+              tabindex="0"
+              aria-expanded="false"
+              aria-controls="content"
+              >Juice
+            <span id="icon" aria-hidde="true"></span>
+        </span>
+        <div id="content" aria-hidden="true">Hydrates...</div>
+    </body>
+</html>

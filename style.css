@@ -1,0 +1,26 @@
+[role="button"]:hover, [role="button"]:focus {
+    background-color: #333;
+    color: #fff;
+    text-shadow: 0 -1px 0 #444;
+    box-shadow: 0 1px 0 #777;
+}
+
+[role="button"][aria-expanded="false"] .icon:after {
+    content: ' >';
+}
+
+[role="button"][aria-expanded="true"] .icon:after {
+    content: ' x';
+}
+
+div[aria-hidden="true"] {
+    display: none;
+}
+
+div[aria-hidden="false"] {
+    display: block;
+    border: 1px #000 solid;
+    padding: 1em;
+    background: #555;
+    color: #fff;
+}
